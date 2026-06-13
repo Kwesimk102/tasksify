@@ -1,0 +1,9 @@
+venv
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+tasks.db
+.env
+.DS_Store
