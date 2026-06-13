@@ -73,6 +73,23 @@ docker-compose up --build
 # Access the application
 # Backend: http://localhost:8000
 # Frontend: http://localhost:3000
+
+## CI / Auto Deploy (Render)
+
+This repository includes a GitHub Actions workflow that triggers a deploy to Render on pushes to `main`.
+
+What you need to do on GitHub:
+
+- Add repository secrets:
+  - `RENDER_API_KEY` — your Render API key (from Account → API Keys).
+  - `RENDER_SERVICE_ID` — the Render service ID for your web service.
+
+Workflow path: `.github/workflows/deploy-render.yml`.
+
+Notes:
+- Render must either be linked to your GitHub repo or you must have a service already created — the workflow triggers a deploy via the Render API using the provided service ID.
+- After adding the two secrets, push to `main` and the workflow will call Render's deploy API to build & deploy the latest commit.
+
 ```
 
 ## 🌐 Access Points
