@@ -1,6 +1,6 @@
 class TaskManager {
     constructor() {
-        this.baseURL = 'http://localhost:8000';
+        this.baseURL = window.location.origin;
         this.tasks = [];
         this.editingTaskId = null;
         this.init();
