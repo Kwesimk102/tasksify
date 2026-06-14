@@ -11,7 +11,7 @@
     <div class="container">
         <header>
             <h1><i class="fas fa-tasks"></i> Taskify</h1>
-            <p>Manage your daily tasks efficiently</p>
+            <p>Stay focused with smart, visual task management.</p>
         </header>
 
         <div class="task-form-container">
@@ -38,9 +38,26 @@
 
         <div class="tasks-container">
             <div class="tasks-header">
-                <h2>Your Tasks</h2>
+                <div>
+                    <h2>Your Tasks</h2>
+                    <p>Track status, edit details, and keep momentum.</p>
+                </div>
                 <div class="task-stats">
                     <span id="totalTasks">0</span> tasks
+                </div>
+            </div>
+            <div class="status-cards">
+                <div class="status-card status-card-pending">
+                    <span>Pending</span>
+                    <strong id="pendingCount">0</strong>
+                </div>
+                <div class="status-card status-card-in-progress">
+                    <span>In Progress</span>
+                    <strong id="inProgressCount">0</strong>
+                </div>
+                <div class="status-card status-card-completed">
+                    <span>Completed</span>
+                    <strong id="completedCount">0</strong>
                 </div>
             </div>
             <div id="tasksList" class="tasks-list">

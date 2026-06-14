@@ -252,7 +252,14 @@ class TaskManager {
     }
 
     updateStats() {
+        const pendingCount = this.tasks.filter(task => task.status === 'pending').length;
+        const inProgressCount = this.tasks.filter(task => task.status === 'in-progress').length;
+        const completedCount = this.tasks.filter(task => task.status === 'completed').length;
+
         document.getElementById('totalTasks').textContent = this.tasks.length;
+        document.getElementById('pendingCount').textContent = pendingCount;
+        document.getElementById('inProgressCount').textContent = inProgressCount;
+        document.getElementById('completedCount').textContent = completedCount;
     }
 
     resetForm() {
