@@ -1,12 +1,23 @@
+# Python
 venv/
 .venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Database
+*.db
 *.sqlite3
-tasks.db
+
+# Environment
 .env
-.DS_Store
-.idea/
+
+# IDE
 .vscode/
+.idea/
+
+# Build
+dist/
+build/
+*.egg-info/
